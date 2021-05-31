@@ -70,4 +70,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.container .d-none {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

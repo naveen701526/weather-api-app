@@ -26,6 +26,15 @@ const updateUI = (data) => {
     const iconSrc = `https://developer.accuweather.com/sites/default/files/${iconValue}-s.png`;
 
     icon.setAttribute('src', iconSrc);
+
+    const timeSrc = weather.IsDayTime ? './daytime.svg' : './nighttime.svg';
+
+    time.setAttribute('src', timeSrc);
+
+    // remove the d-none class if present
+    if (card.classList.contains('d-none')) {
+        card.classList.remove('d-none');
+    }
 };
 
 const updateCity = async (city) => {
