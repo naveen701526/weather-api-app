@@ -5,13 +5,48 @@ body {
   color: #edf5e1;
 }
 
+.change-location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.change-location label {
+  margin-bottom: 1rem;
+}
+
+.change-location input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid #379683;
+  background: #8ee4af;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: #05386b;
+}
+
+.change-location input:focus {
+  border-bottom: 5px solid #05386b;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5rem 5rem auto;
+  -ms-grid-rows: 5rem 10rem auto;
   -ms-grid-columns: 1fr;
-      grid-template: 5rem 5rem auto / 1fr;
+      grid-template: 5rem 10rem auto / 1fr;
   grid-column: 1 / -1;
   height: 100vh;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
