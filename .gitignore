@@ -1,0 +1,8 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+scss/
+
+#script files
+script.sh
