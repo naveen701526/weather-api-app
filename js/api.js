@@ -7,8 +7,7 @@ const getWeather = async (id) => {
     const response = await fetch(base + query);
     const data = await response.json();
 
-    // return data[0];
-    console.log(data);
+    return data[0];
 };
 
 const getCityInfo = async (cityName) => {
@@ -20,10 +19,5 @@ const getCityInfo = async (cityName) => {
 
     const data = await response.json();
 
-    // return data[0];
-    console.log(data);
+    return data[0];
 };
-
-// 204842
-
-getWeather(204842);
