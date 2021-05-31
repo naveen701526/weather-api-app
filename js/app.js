@@ -4,8 +4,32 @@ const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img');
 
+const updateUI = (data) => {
+    const {cityDets, weather} = data;
+
+    // update details template
+    details.innerHTML = `
+    <h5>City Name</h5>
+    <div>Weather Condition</div>
+    <div>
+        <span>temp</span>
+        <span>&deg;C</span>
+    </div>
+    `;
+
+    const iconValue =
+        weather.WeatherIcon < 10
+            ? '0' + weather.WeatherIcon
+            : weather.WeatherIcon;
+
+    // update the night / day and icon images
+    const iconSrc = `https://developer.accuweather.com/sites/default/files/${iconValue}-s.png`;
+
+    icon.setAttribute('src', iconSrc);
+};
+
 const updateCity = async (city) => {
-    const cityDets = await getCity(city);
+    const cityDets = await getCityInfo(city);
     const weather = await getWeather(cityDets.Key);
     return {cityDets, weather};
 };
