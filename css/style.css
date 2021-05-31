@@ -74,4 +74,12 @@ body {
 .container .d-none {
   display: none;
 }
+
+.container .card {
+  background-color: #05386b;
+}
+
+.container .icon {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
