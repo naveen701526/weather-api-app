@@ -8,9 +8,10 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px auto 100px;
-  -ms-grid-columns: 30fr 70fr;
-      grid-template: 100px auto 100px / 30fr 70fr;
+  -ms-grid-rows: 5rem 5rem auto;
+  -ms-grid-columns: 1fr;
+      grid-template: 5rem 5rem auto / 1fr;
+  grid-column: 1 / -1;
   height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
