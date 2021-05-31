@@ -1,5 +1,16 @@
 body {
-  background-color: #5cdb95;
+  background: #5cdb95;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
   color: #edf5e1;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px auto 100px;
+  -ms-grid-columns: 30fr 70fr;
+      grid-template: 100px auto 100px / 30fr 70fr;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
